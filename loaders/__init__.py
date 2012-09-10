@@ -41,7 +41,8 @@ class Lazy(object):
 
     def ready(self):
         self.active = False
-        del sys.modules[self.module_name]
+        if self.module_name in sys.modules:
+            del sys.modules[self.module_name]
         module = __import__(self.module_name, fromlist=True)
         self.active = True
         del sys.modules[self.module_name]
