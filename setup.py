@@ -17,13 +17,12 @@ class PyTest(Command):
 
 setup(
     name='python-loaders',
-    version='0.2.1',
+    version='0.2.2',
     url='http://github.com/FelixLoether/python-loaders',
     author='Oskari Hiltunen',
     author_email='python-loaders@loethr.net',
     description='Small collection of custom module loaders for Python.',
     long_description=open('README.rst').read(),
-    data_files=['README.rst'],
     packages=['loaders'],
     install_requires=['proxytypes==0.9'],
     platforms='any',
