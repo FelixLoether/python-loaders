@@ -2,7 +2,7 @@ import sys
 from peak.util.proxies import ObjectProxy, ObjectWrapper
 
 
-class LazyLoader(object):
+class Lazy(object):
     def __init__(self, module_name, attrs):
         self.module_name = module_name
         self.attrs = attrs
