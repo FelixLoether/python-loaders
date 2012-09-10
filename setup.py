@@ -17,7 +17,7 @@ class PyTest(Command):
 
 setup(
     name='python-loaders',
-    version='0.1.0',
+    version='0.2.0',
     url='http://github.com/FelixLoether/python-loaders',
     author='Oskari Hiltunen',
     author_email='python-loaders@loethr.net',
