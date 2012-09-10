@@ -40,9 +40,9 @@ class Lazy(BaseLoader):
         return LazyModule()
 
     def ready(self):
+        self.load_module(self.module_name)  # Make sure it's been loaded.
+        del sys.modules[self.module_name]
         self.active = False
-        if self.module_name in sys.modules:
-            del sys.modules[self.module_name]
         module = __import__(self.module_name, fromlist=True)
         self.active = True
         del sys.modules[self.module_name]
