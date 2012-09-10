@@ -16,7 +16,9 @@ Installation
 API Reference
 -------------
 
-.. class:: loaders.Lazy(module_name, attrs)
+.. module:: loaders
+
+.. class:: Lazy(module_name, attrs)
 
     Prevents the module from being loaded until the lazy loader's :meth:`ready`
     method has been called. The module can still be imported and the attrs
