@@ -23,6 +23,7 @@ setup(
     author_email='python-loaders@loethr.net',
     description='Small collection of custom module loaders for Python.',
     packages=['loaders'],
+    install_requires=['proxytypes==0.9'],
     platforms='any',
     cmdclass={'test': PyTest},
     classifiers=[
