@@ -1,3 +1,4 @@
 docs/_build/
+python_loaders.egg_info/
 *.pyc
 .env
