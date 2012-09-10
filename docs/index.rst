@@ -11,7 +11,7 @@ Installation
 ------------
 ::
 
-    pip install -e "git://github.com/FelixLoether/python-loaders#egg=python-loaders"
+    pip install python-loaders
 
 API Reference
 -------------
