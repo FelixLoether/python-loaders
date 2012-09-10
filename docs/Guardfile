@@ -1,0 +1,3 @@
+from livereload.task import Task
+
+Task.add('_build/html/index.html')
