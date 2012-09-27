@@ -12,7 +12,7 @@ class Lazy(BaseLoader):
         self.module = None
         self.loaded = False
 
-    def find_module(self, full_name, path):
+    def find_module(self, full_name, path=None):
         if self.active and full_name == self.module_name:
             return self
 
